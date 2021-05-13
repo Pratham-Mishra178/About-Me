@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href ="https://code.jquery.com/jquery-3.6.0.js">
     <title>Pratham</title>
 </head>
 <body>
@@ -21,13 +24,15 @@
 
     <div class="label1"><h1><strong>Welcome To My Page !!</strong></h1></div>
 
+    <img align="right" class="mo" src="images/moon.png" id="icon">
+
 
     
     <div class="label2"><h1 class="about">&nbspAbout Me</h1><p class="fir">&nbspHello!<br>&nbspI am Pratham Mishra from Jamshedpur, Jharkhand, Currently pursuing my Bachelor of  Technology degree in
     <br><img class="profile" src="images/pratham.jpg">&nbspElectronics and telecommunication department from Veer Surendra sai university of technology, &nbspBurla. 
-    I'm a guy with multiple mood swings. My interest changes every second, but the field is &nbspstill &nbsptechnical. My immense interest in technology makes me discover and try a lot of things. 
-    If my &nbspexperiment fails ! 'll learn and grow. programming has been my inspiration for a long. 
-    I love to make &nbspinnovations with the help of technology. I love to participate in competitive coding events hackathons. 
+    &nbspI'm a guy with multiple mood swings. My interest changes every second, but the field is &nbspstill &nbsptechnical. &nbspMy immense interest in technology makes me discover and try a lot of things. 
+    If my &nbspexperiment fails ! 'll &nbsplearn and grow. programming has been my inspiration for a long. 
+    I love to make &nbspinnovations with the &nbsphelp of technology. I love to participate in competitive coding events hackathons. 
     So I want to join ENIGMA to enhance my skills and obviously to learn a lot of new things.</p></div>
 
 
@@ -101,6 +106,21 @@
     </div>
 
     </div>
+<script>
+
+var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if( document.body.classList.contains("dark-theme")){
+        icon.src ="images/sun.png";
+    }else{
+        icon.src ="images/moon.png";
+    }
+    }
+
+
+</script>
 
 </body>
 </html>

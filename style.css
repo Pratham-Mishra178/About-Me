@@ -3,6 +3,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --next-color: rgba(102, 94, 94, 0.884);
+    --shadow-color: rgba(255, 255, 255, 0.493);
+}
+
+.dark-theme {
+    --primary-color: black;
+    --secondary-color: rgba(204, 197, 197, 0.863);
+    --next-color: rgba(0, 0, 0, 0.849);
+    --shadow-color: rgb(0, 0, 0);
+}
+
 body{
     background: rgb(0, 0, 0); 
 }
@@ -20,7 +34,7 @@ body{
 
 .box1{
     position: absolute;
-    background: rgba(102, 94, 94, 0.884);
+    background: var(--next-color);
     height: 96vh;
     width: 187vh;
     top: 50%;
@@ -93,8 +107,8 @@ body{
      transform: translate(-50%, -500%);
      font-size: 55px;
      text-align: center;
-     color: rgb(0, 0, 0);
-     text-shadow: 1px 1px 9px rgba(255, 255, 255, 0.493);
+     color: var(--secondary-color);
+     text-shadow: 1px 1px 9px var(--shadow-color);
 
  }
 
@@ -146,7 +160,7 @@ body{
 
 .fir{
     
-    
+    color: var(--secondary-color);
     position: absolute;
     font-size: 15px;
     font-weight: 400;
@@ -156,7 +170,7 @@ body{
 
 .sec{
 
-
+    color: var(--secondary-color);
     position: relative;
     font-size: 15px;
     font-weight: 400;
@@ -167,7 +181,7 @@ body{
 
 .third{
 
-
+    color: var(--secondary-color);
     position: relative;
     font-size: 15px;
     font-weight: 400;
@@ -200,29 +214,29 @@ body{
      left: 6%;
      transform: translate(-39%, -120%);
      font-size: 30px;
-     color: rgb(0, 0, 0);
+     color: var(--secondary-color);
 }
 
 .skills{
       position: absolute;
       font-family: custom2;
       font-weight: 500px;
-      top:5%;
+      top:0%;
       left: 70%;
       transform: translate(-0%, -110%);
       font-size: 30px;
-      color: rgb(0, 0, 0);
+      color: var(--secondary-color);
 }
 
 .int{
        position: absolute;
        font-family: custom2;
        font-weight: 500px;
-       top:8%;
+       top:2%;
        left: 6%;
        transform: translate(-20%, -110%);
        font-size: 30px;
-       color: rgb(0, 0, 0);
+       color: var(--secondary-color);
 }
 
 .footer{
@@ -244,4 +258,15 @@ transform: translate(-50%, -100%);
 li{
     font-weight: 400;
     font-size: 15px;
+    color: var(--secondary-color);
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.mo{
+    margin-right: 10px;
+    margin-top: 8px;
 }
