@@ -1,272 +1,241 @@
-*{
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --primary-color: white;
-    --secondary-color: black;
-    --next-color: rgba(102, 94, 94, 0.884);
-    --shadow-color: rgba(255, 255, 255, 0.493);
-}
-
-.dark-theme {
-    --primary-color: black;
-    --secondary-color: rgba(204, 197, 197, 0.863);
-    --next-color: rgba(0, 0, 0, 0.849);
-    --shadow-color: rgb(0, 0, 0);
-}
-
-body{
-    background: rgb(0, 0, 0); 
-}
-
-.box {
-    position: absolute;
-    background-image: url('https://source.unsplash.com/1920x1080/?gaming,hackers,darkweb,technology,linux,hack,cybercrime');
-    height: 96vh;
-    width: 187vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-}
-
-.box1{
-    position: absolute;
-    background: var(--next-color);
-    height: 96vh;
-    width: 187vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-
-}
-
-
-
-.main{
-    position: absolute;
-    background: rgb(252, 0, 0);
-    height: 97vh;
-    width: 188vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    
-}
-
-
-.main:before,
-.main:after{
-    
-    content: '';
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
-    background-size: 400%;
-    width: calc(100% + 5px);
-    height: calc(100% + 5px);
-    z-index: -1;
-    border-radius: 10px;
-    animation: animate 20s linear infinite;
-
-}
-
-@keyframes animate{
-    0%{
-        background-position: 0 0;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-    50%{
-        background-position: 400% 0;
+
+    :root {
+        --primary-color: white;
+        --secondary-color: black;
+        --next-color: rgba(102, 94, 94, 0.884);
+        --shadow-color: rgba(255, 255, 255, 0.493);
+        --transition-delay: 0s;
     }
-    100%{
-        background-position: 0 0;
+
+    .dark-theme {
+        --primary-color: black;
+        --secondary-color: rgba(204, 197, 197, 0.863);
+        --next-color: rgba(0, 0, 0, 0.849);
+        --shadow-color: rgb(0, 0, 0);
+        --transition-delay: 1s;
     }
-}
 
-.main:after {
+    body{
+        padding: 17px;
+        background-color: black;
+    }
 
-    filter: blur(10px);
+    .div1{
+        position: relative;
+        background-image: url('https://source.unsplash.com/1920x1080/?gaming,hackers,darkweb,technology,linux,hack,cybercrime');
+        min-height: 95.5vh;
+        width: 100%;
+        border-radius: 10px;
+    }
 
-}
+    .div2 {
+        position: relative;
+        background-color: var(--next-color);
+        min-height: 95.5vh;
+        width: 100%;
+        border-radius: 10px;
+        padding-top: 5px;
+        transition: var(--transition-delay);
+    }
 
-
- .label1 {
-     position: absolute;
-     font-family: custom;
-     letter-spacing: 2px;
-     top: 55%;
-     left: 50%;
-     transform: translate(-50%, -500%);
-     font-size: 55px;
-     text-align: center;
-     color: var(--secondary-color);
-     text-shadow: 1px 1px 9px var(--shadow-color);
-
- }
-
-
-.label2{
-   position: absolute;
-   background: rgba(255, 255, 255, 0);
-   height: 20vh;
-   width: 100vh;
-   top: 50%;
-   left: 50%;
-   transform: translate(-70%, -150%);
-   border-radius: 10px;
-   
-}
-.label3 {
-    position: absolute;
-    background: rgba(255, 255, 255, 0);
-    height: 15vh;
-    width: 100vh;
-    top: 55%;
-    left: 50%;
-    transform: translate(-30%, -40%);
-    border-radius: 10px;
-    
-}
-.label4 {
-    position: absolute;
-    background: rgba(255, 255, 255, 0);
-    height: 15vh;
-    width: 100vh;
-    top: 75%;
-    left: 50%;
-    transform: translate(-70%, -40%);
-    border-radius: 10px;
-}
+    .div3{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        font-family: custom;
+        letter-spacing: 2px;
+        font-size: clamp(.1rem, 9.5vw, 3.5rem);
+        color: var(--secondary-color);
+        text-shadow: 1px 1px 9px var(--shadow-color);
+    }
 
 
+    .div4{
+        background-color: rgba(255, 127, 80, 0);
+        width: 100%;
+        min-height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 5%;
+    }
 
-@font-face{
-    font-family: custom;
-    src: url('fonts/font2.ttf');
-}
+    .div5{
+        background-color: rgba(100, 255, 80, 0);
+        width: 100%;
+        padding-left: 13%;
+        padding-right: 32%;
+    }
 
-@font-face {
-    font-family: custom2;
-    src: url('fonts/font1.ttf');
-}
+    .div6{
+        background-color: rgba(83, 80, 255, 0);
+        width: 100%;
+        padding-right: 13%;
+        padding-left: 32%;
+    }
 
-.fir{
-    
-    color: var(--secondary-color);
-    position: absolute;
-    font-size: 15px;
-    font-weight: 400;
-    
-    
-}
+    .div7 {
+        background-color: rgba(80, 229, 255, 0);
+        width: 100%;
+        padding-left: 13%;
+        padding-right: 32%;
+    }
 
-.sec{
+    .div1:before,
+    .div1:after {
 
-    color: var(--secondary-color);
-    position: relative;
-    font-size: 15px;
-    font-weight: 400;
-    text-align: end;
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
+        background-size: 400% 400%;
+        width: calc(100% + 12px);
+        height: calc(100% + 12px);
+        z-index: -1;
+        border-radius: 10px;
+        animation: animate 20s linear infinite;
+    }
 
+    @keyframes animate {
+        0% {
+            background-position: 0 0;
+        }
 
-}
+        50% {
+            background-position: 400% 0;
+        }
 
-.third{
+        100% {
+            background-position: 0 0;
+        }
+    }
 
-    color: var(--secondary-color);
-    position: relative;
-    font-size: 15px;
-    font-weight: 400;
+    .div1:after {
 
-}
+        filter: blur(10px);
 
-.profile{
-    max-height: 112px;
-    border-radius: 10px;
-    float: left;
-}
+    }
 
-.skill{
-    max-height: 70px;
-    border-radius: 10px;
-    float: right;
-}
+        @font-face {
+            font-family: custom;
+            src: url('fonts/font2.ttf');
+        }
 
-.interest {
-    max-height: 60px;
-    border-radius: 10px;
-    float: left;
-}
+        @font-face {
+            font-family: custom2;
+            src: url('fonts/font1.ttf');
+        }
 
-.about{
-     position: absolute;
-     font-family: custom2;
-     font-weight: 500px;
-     top: 4%;
-     left: 6%;
-     transform: translate(-39%, -120%);
-     font-size: 30px;
-     color: var(--secondary-color);
-}
+            #icon {
+                width: 20px;
+                cursor: pointer;
+                
+            }
 
-.skills{
-      position: absolute;
-      font-family: custom2;
-      font-weight: 500px;
-      top:0%;
-      left: 70%;
-      transform: translate(-0%, -110%);
-      font-size: 30px;
-      color: var(--secondary-color);
-}
+            .mo {
+                margin-right: .5rem;
+            }
 
-.int{
-       position: absolute;
-       font-family: custom2;
-       font-weight: 500px;
-       top:2%;
-       left: 6%;
-       transform: translate(-20%, -110%);
-       font-size: 30px;
-       color: var(--secondary-color);
-}
+                .profile {
+                    max-height: 112px;
+                    border-radius: 10px;
+                    float: left;
+                    margin-right: 8px;
+                }
 
-.footer{
-position: absolute;
-height: 10px;
-width: 600px;
-top: 92%;
-left: 50%;
-transform: translate(-50%, -100%);
-}
+                .skill {
+                    max-height: 70px;
+                    border-radius: 10px;
+                    float: right;
+                    margin-left: 8px;
+                }
 
-.info{
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    margin-bottom: 1%;
-}
+                .interest {
+                    max-height: 60px;
+                    border-radius: 10px;
+                    float: left;
+                    margin-right: 8px;
+                }
 
-li{
-    font-weight: 400;
-    font-size: 15px;
-    color: var(--secondary-color);
-}
+                .fir {
+                    color: var(--secondary-color);
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-align: justify;
+                }
 
-#icon {
-    width: 30px;
-    cursor: pointer;
-}
+                .sec {
+                    color: var(--secondary-color);
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-align: justify;
+                }
 
-.mo{
-    margin-right: 10px;
-    margin-top: 8px;
-}
+                .third {
+                    color: var(--secondary-color);
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-align: justify;
+                }
+
+                .div4 h1{
+                    font-family: custom2;
+                    font-weight: 500px;
+                    font-size: clamp(1.5rem, 2vw, 3rem);
+                    color: var(--secondary-color);
+                }
+
+                .info {
+                    text-align: center;
+                    color: rgba(255, 255, 255, 0.932);
+                    font-size: 15px;
+                    margin-bottom: 1%;
+                }
+
+                .foot{
+                    background-color: var(--next-color);
+                    transition: var(--transition-delay);
+                }
+                
+
+                @media (max-width: 600px) {
+                    .div5 {
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        flex-direction: column;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                    }
+                    .div6 {
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        flex-direction: column;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                    }
+                    .div7 {
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        flex-direction: column;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                    }
+                }
+
+                @media (min-width: 600px) {
+                    .div6 h1 {
+                        text-align: end;
+                    }
+                }
