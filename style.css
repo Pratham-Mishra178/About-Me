@@ -186,6 +186,9 @@
                     font-weight: 400;
                     text-align: justify;
                 }
+li{
+color: var(--secondary-color);
+}
 
                 .div4 h1{
                     font-family: custom2;
