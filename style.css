@@ -40,7 +40,7 @@
         width: 100%;
         border-radius: 10px;
         padding-top: 5px;
-        transition: var(--transition-delay);
+        transition: 1s;
     }
 
     .div3{
@@ -186,9 +186,10 @@
                     font-weight: 400;
                     text-align: justify;
                 }
-li{
-color: var(--secondary-color);
-}
+
+                li{
+                color: var(--secondary-color);
+                }
 
                 .div4 h1{
                     font-family: custom2;
@@ -206,7 +207,7 @@ color: var(--secondary-color);
 
                 .foot{
                     background-color: var(--next-color);
-                    transition: var(--transition-delay);
+                    transition: 1s;
                 }
                 
 
