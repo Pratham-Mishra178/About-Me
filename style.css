@@ -206,7 +206,7 @@
                 }
 
                 .foot{
-                    background-color: var(--next-color);
+                    background-color: transparent;
                     transition: 1s;
                 }
                 
